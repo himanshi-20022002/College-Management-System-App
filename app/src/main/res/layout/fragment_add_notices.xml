@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".activities.faculty.AddNotices">-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activities.faculty.notices.AddNotices">
+
+    <ImageView
+        android:id="@+id/filePosted"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="top"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_round_shape">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/textSampleNotice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="top"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:text="Click to add File"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#00000000">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/noticeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLength="30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filePosted"
+        android:layout_margin="12dp"
+        android:hint="Notice Description"
+        android:padding="10dp"
+        android:background="@drawable/edittext_round_shape">
+
+    </EditText>
+   <!-- <EditText
+        android:id="@+id/noticeID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLength="30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticeDescription"
+        android:layout_margin="12dp"
+        android:hint="Post Description"
+        android:padding="10dp"
+        android:background="@drawable/edittext_round_shape">
+
+    </EditText>-->
+    <Button
+        android:id="@+id/post_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticeDescription"
+        android:layout_margin="12dp"
+        android:text="POST"
+        android:background="@drawable/login_bk">
+
+    </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_myProfile" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_assignment"
+            android:icon="@drawable/ic_menu_assignment"
+            android:title="@string/menu_assignment" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/ic_menu_timetable"
+            android:title="@string/menu_timetable" />
+
+        <item
+            android:id="@+id/nav_notices"
+            android:icon="@drawable/ic_menu_notices"
+            android:title="@string/menu_notices" />
+
+        <item
+            android:id="@+id/nav_busTracking"
+            android:icon="@drawable/ic_menu_bustracking"
+            android:title="@string/menu_busTracking" />
+
+
+    </group>
+</menu>

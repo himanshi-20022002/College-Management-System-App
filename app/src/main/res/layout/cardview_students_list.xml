@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_student_list"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/item_attendanceImage"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:background="@drawable/student_attendance_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/item_studentName"
+            android:layout_width="160dp"
+            android:layout_height="39dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/item_attendanceImage"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <!--<TextView
+            android:id="@+id/item_studentLastName"
+            android:layout_width="70dp"
+            android:layout_height="39dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/item_studentFirstName"
+            android:textSize="20sp">
+        </TextView>-->
+
+
+        <TextView
+            android:id="@+id/item_studentRollNo"
+            android:layout_width="60dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/item_studentName"
+            app:layout_constraintLeft_toRightOf="@+id/item_attendanceImage">
+
+        </TextView>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/item_studentName"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioPresent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:buttonTint="@color/radioButtonPresent"
+                android:text=" Present"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioAbsent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="  Absent"
+                android:buttonTint="@color/radioButtonAbsent"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

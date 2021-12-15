@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_busTracking"
+        android:name="com.example.himanshi2002.project2.activities.student.ui.busTracking.BusTracking"
+        android:label="@string/menu_busTracking"
+        tools:layout="@layout/fragment_bus_tracking2" />
+    <fragment
+        android:id="@+id/nav_notices"
+        android:name="com.example.himanshi2002.project2.activities.student.ui.notices.NoticesFragment"
+        android:label="@string/menu_notices"
+        tools:layout="@layout/fragment_notices" />
+    <fragment
+        android:id="@+id/nav_timetable"
+        android:name="com.example.himanshi2002.project2.activities.student.ui.timetable.TimeTableFragment"
+        android:label="@string/menu_timetable"
+        tools:layout="@layout/fragment_time_table" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.himanshi2002.project2.activities.student.ui.profile.ProfileFragment"
+        android:label="@string/menu_myProfile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.himanshi2002.project2.activities.student.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_assignment"
+        android:name="com.example.himanshi2002.project2.activities.student.ui.assignment.AssignmentFragment"
+        android:label="@string/menu_assignment"
+        tools:layout="@layout/fragment_assignment" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.himanshi2002.project2.activities.student.ui.attendance.AttendanceFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_attendance" />
+</navigation>

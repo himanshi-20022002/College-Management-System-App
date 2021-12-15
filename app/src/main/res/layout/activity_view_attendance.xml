@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.student.ui.attendance.ViewAttendance">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+       android:layout_toRightOf="@+id/profileImage">
+    </TextView>
+
+    <TextView
+        android:id="@+id/studentRollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/studentName"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="-26dp"
+        android:textSize="10dp">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/profileImage"
+        android:layout_marginBottom="-120dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:padding="10dp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/circleTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/total"
+                android:layout_marginLeft="157dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/circletotal">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/circleTotal"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="30dp">
+            </TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cardViewTotal"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Present"
+                android:textColor="@color/black"
+                android:textSize="30dp"></TextView>
+
+            <ImageView
+                android:id="@+id/circlePresent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@id/present"
+                android:src="@drawable/circlepresent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:layout_toRightOf="@id/circlePresent">
+            </TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAbsent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cardViewPresent"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Absent"
+                android:textColor="@color/black"
+                android:textSize="30dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/circleAbsent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="127dp"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@id/absent"
+                android:src="@drawable/circleabsent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:layout_toRightOf="@id/circleAbsent">
+            </TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@id/cardViewAbsent"
+        android:layout_marginLeft="30dp"
+        android:padding="7dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginBottom="-100dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnCheckStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/date"
+        android:layout_alignBottom="@id/cardViewAbsent"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginLeft="7dp"
+        android:text="Check Status">
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/date"
+        android:layout_marginBottom="-40dp"
+        android:text="Status   :   "
+        android:textSize="20dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnCheckStatus"
+        android:layout_toRightOf="@id/tv_status"
+        android:layout_marginBottom="-40dp"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black">
+    </TextView>
+
+</RelativeLayout>
